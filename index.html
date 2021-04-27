@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/datapicker.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width">
+	<title>JavaScript learning</title>
+</head>
+<body>
+
+	<div class="container">
+		<div class="form__wrapper">
+			<h1 class="form__title">Отправка данных на почту <span style="text-transform: uppercase;">join@ecwid.com</span></h1>
+			<form id="form" class="form" method="POST" action="">
+				<div class="form__item">
+					<label class="form__subtitle" for="form__name">Имя: </label>
+					<input class="form__input" id="form__name" type="text" placeholder="Введите имя" name="name">
+					<div class="error__hint">Введите Ваше имя!</div>
+				</div>
+				<div class="form__item">
+					<label class="form__subtitle" for="form__mail">E-mail: </label>
+					<input class="form__input" id="form__mail" type="text" placeholder="E-mail" name="mail">
+					<div class="error__hint" >Введите Вашу почту!</div>
+				</div>
+				<div class="form__item">
+					<label class="form__subtitle" for="form__tel">Телефон: </label>
+					<input class="form__input" id="form__tel" type="tel" placeholder="+7 (000) 000 0000" name="tel">
+					<div class="error__hint">Введите Ваш телефон</div>
+				</div>
+				<div class="form__item form__item-date-picker">
+					<label class="form__subtitle" for="form__date">Дата рождения:</label>
+					<!-- <input class="form__input form__date" id="form__date" type="text" name="date" placeholder="__  /  __  /  ____" autocomplete="off"> -->
+					<div tabindex="0" class="form__date form__input" id="form__date">__ / __ / ____</div>
+					<div class="error__hint">Введите Вашу дату рождения!</div>
+					<div class="block__date">
+						<div class="date-picker" data-time="dd:mm:yy">
+							<div class="picker-days">
+								<div class="picker-days__up"></div>
+								<input tabindex="-1" type="number" class="picker-days__pick" value="1">
+								<div class="picker-days__down"></div>
+							</div>
+
+							<div class="separator">:</div>
+
+							<div class="picker-months">
+								<div class="picker-months__up"></div>
+								<input tabindex="-1" type="number" class="picker-months__pick" value="1">
+								<div class="picker-months__down"></div>
+							</div>
+
+							<div class="separator">:</div>
+
+							<div class="picker-years">
+								<div class="picker-years__up"></div>
+								<input tabindex="-1" type="number" class="picker-years__pick" value="2020">
+								<div class="picker-years__down"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form__item">
+					<label class="form__subtitle" for="form__text">О себе:</label>
+					<textarea name="text" class="form__input form__text" name="" id="form__text" value=""></textarea>
+					<div class="error__hint">Расскажите что-нибудь о себе</div>
+				</div>
+				<div class="form__item">
+					<input class="form__input form__submit" type="submit" value="Отправить">
+				</div>
+				<div class="form__result">
+					
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+	<script src="js/datemask.js"></script>
+</body>
+</html>

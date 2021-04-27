@@ -1,0 +1,113 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+.date-picker {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	width: 100%;
+
+	background-color: #f3f3f3;
+	border-radius: 8px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+
+	color: #53565a;
+	font-size: 25px;
+	font-weight: 700;
+
+	user-select: none;
+}
+.picker-days,
+.picker-months,
+.picker-years {
+	position: relative;
+	width: 50px;
+	text-align: center;
+	display: flex;
+	justify-content: stretch;
+	align-items: stretch;
+}
+.picker-days {}
+.picker-months {}
+.picker-years{
+	width: 90px;
+}
+.separator {
+	display: flex;
+	align-items: center;
+}
+
+.picker-days__pick,
+.picker-months__pick,
+.picker-years__pick {
+	background: none;
+	font-size: 28px;
+
+	border: none;
+
+	display: block;
+	width: 100%;
+	text-align: center;
+
+	height: 80px;
+}
+.picker-days__pick {}
+.picker-months__pick {}
+.picker-years__pick {}
+
+
+.picker-days__up,
+.picker-days__down,
+.picker-months__up,
+.picker-months__down,
+.picker-years__up,
+.picker-years__down {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+
+	width: 30px;
+	height: 15px;
+
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+
+	cursor: pointer;
+}
+.picker-days__up:hover,
+.picker-days__down:hover,
+.picker-months__up:hover,
+.picker-months__down:hover,
+.picker-years__up:hover,
+.picker-years__down:hover {
+	border-bottom-color: #53565a;
+	border-top-color: #53565a;
+}
+.picker-days__up,
+.picker-months__up,
+.picker-years__up{
+	top: 5px;
+	border-bottom: 15px solid #aaa;
+}
+.picker-days__down,
+.picker-months__down,
+.picker-years__down{
+	bottom: 5px;
+	border-top: 15px solid #aaa;
+}
+
+
+.picker-days__up {}
+.picker-days__down {}
+.picker-months__up {}
+.picker-months__down {}
+.picker-years__up {}
+.picker-years__pick__down {}
