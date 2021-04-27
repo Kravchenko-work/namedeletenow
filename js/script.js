@@ -48,23 +48,6 @@ form.onsubmit = async (e) => {
 	form__wrapper.classList.remove('sending');
 };
 
-// Отправка в файл php с помощью XMLHttpRequest
-// form.onsubmit = function(e){
-// 	e.preventDefault();
-
-	
-// 	let formData = new FormData(form);
-	
-// 	let xhr = new XMLHttpRequest();	
-// 	xhr.open('POST', 'send.php');
-// 	xhr.addEventListener('load', function(e){
-// 		console.log(this.response);
-// 	});
-// 	xhr.send(formData);
-	
-// }
-
-
 
 //Маска для поля с телефоном
 let form__tel = document.getElementById('form__tel');
