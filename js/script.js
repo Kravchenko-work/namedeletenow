@@ -120,7 +120,7 @@ function formValidate(){
 			}
 		}
 		else {
-			if (elem.value = ""){
+			if (elem.value == ""){
 				formAddError(elem);
 				error++;
 			}
